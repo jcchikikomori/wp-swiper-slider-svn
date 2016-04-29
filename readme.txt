@@ -17,11 +17,11 @@ Swiper slider now for Wordpress !
 Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
 
 Current features :
-- Create, edit, delete a slider (custom post type).
-- Add, sort (drag and drop), replace, and remove images from media library.
-- Configure the slider (metabox), enter Swiper configuration variables into a textarea.
-- Enable/disable nav buttons.
-- Two CSS area for nav button design.
+* Create, edit, delete a slider (custom post type).
+* Add, sort (drag and drop), replace, and remove images from media library.
+* Configure the slider (metabox), enter Swiper configuration variables into a textarea.
+* Enable/disable nav buttons.
+* Two CSS area for nav button design.
 
 == Installation ==
 
