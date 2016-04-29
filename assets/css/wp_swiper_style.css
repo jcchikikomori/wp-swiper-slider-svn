@@ -1,0 +1,43 @@
+
+
+/*===== Gallery metabox =====*/
+#gallery-metabox-list li{
+	position: relative;
+	float: left;
+	width: calc(12.5% - 10px);
+	text-align: center;
+	margin: 10px 10px 10px 0;
+	cursor: move;
+}
+#gallery-metabox-list li > .change-image.button{
+	width: 95%;
+}
+#gallery-metabox-list li > small{
+	opacity: 0;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+#gallery-metabox-list li:hover > small{opacity: 1;}
+#gallery-metabox-list li > small a{
+	display: block;
+	color: transparent;
+	position: absolute;
+	top: -13px; right: 6px;
+	width: 10px;
+}
+#gallery-metabox-list li > small a:before{
+	content: "\f153";
+	color: #000;
+	font-family: dashicons;
+	font-size: 22px;
+	background: #fff;
+	border-radius: 100%;
+}
+
+/*==================*/
+
+.tab_trigger{
+	display: inline-block;
+	margin: 0 5px !important;
+}
+.tab_trigger:first-of-type{margin-left: 0 !important;}
