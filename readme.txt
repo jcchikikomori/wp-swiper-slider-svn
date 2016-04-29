@@ -75,7 +75,6 @@ I speak English and French ;)
 What's coming (soon) ?
 
 * Better design for configuration area.
-* Tab system sorting configuration types (general, advanced, etc...).
 * 1. A free version with most used options.
   2. A "donate" version, from $10, with all features.
 * First stable version will include ALL swiper options !
