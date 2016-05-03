@@ -1,6 +1,6 @@
 === WP Swiper slider ===
 Contributors: webevasion
-* Donate link: http://example.com/
+Donate link: http://www.webevasion.net/
 Tags: comments, spam
 Requires at least: 4.3
 Tested up to: 4.3
