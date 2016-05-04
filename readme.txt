@@ -1,10 +1,10 @@
 === WP Swiper slider ===
 Contributors: webevasion
 Donate link: http://www.webevasion.net/
-Tags: comments, spam
-Requires at least: 4.3
-Tested up to: 4.3
-Stable tag: 0.1.3
+Tags: slider, responsive, mobile, touch, swiper
+Requires at least: 4.0
+Tested up to: 4.5.1
+Stable tag: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ I speak English and French ;)
 2.
 
 == Changelog ==
+
+= 0.1.4 =
+* improved shortcode area
 
 = 0.1.3 =
 * Added tab system for configuration area.

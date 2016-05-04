@@ -46,14 +46,27 @@
 		}
 
 		function wp_swiper_config_metabox($meta_boxes){
+			if(isset($_GET['post'])){$post_id = $_GET['post'];}else{$post_id = null;}
 			$meta_boxes[] = array(
 				'title'			=> __('Configuration', 'wp_swiper'),
 				'post_types'	=> 'wp_swiper',
 				'fields'		=> array(
+					//shortcode//
+					array(
+						'type'			=> 'input',
+						'class'			=> 'always_visible',
+						'attributes' => array(
+							'value'		=> '[wp_swiper id='.$post_id.']',
+							'onclick'	=> 'this.select();',
+							'style'		=> 'width: 200px; text-align: center;'
+						),
+						'desc'			=> '<span style="margin: 8px; line-height: 22px;">Copy/paste this shortcode where you want !</span>'
+					),
+
 					//Metabox tabs buttons//
-					array('class' => 'tab_trigger general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
-					array('class' => 'tab_trigger navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
-					array('class' => 'tab_trigger advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
+					array('class' => 'tab_trigger always_visible general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
+					array('class' => 'tab_trigger always_visible navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
+					array('class' => 'tab_trigger always_visible advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
 
 					//General//
 					array(
