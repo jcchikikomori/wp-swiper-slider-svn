@@ -5,7 +5,7 @@
 		Description: Swiper Most Modern Mobile Touch Slider for WordPress
 		Author: Webévasion
 		Author URI: http://www.webevasion.net/
-		Version: 0.1.5
+		Version: 0.1.5.1
 		License: GPLv2 or later
 	*/
 
@@ -28,6 +28,7 @@
 			wp_enqueue_script('thickbox');
 
 			//Gallery metabox script
+			wp_enqueue_media();
 			wp_enqueue_script('gallery_metabox_script', plugin_dir_url(__FILE__).'assets/js/gallery_metabox.js', array('jquery', 'jquery-ui-sortable'));
 			wp_enqueue_script('wp_swiper_script', plugin_dir_url(__FILE__).'assets/js/wp_swiper_script.js', array('jquery'));
 

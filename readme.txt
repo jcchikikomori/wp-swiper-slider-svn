@@ -50,6 +50,9 @@ I speak English and French ;)
 
 == Changelog ==
 
+= 0.1.5.1 =
+* Media upload error fix.
+
 = 0.1.5 =
 * 0.1.4 errors fix
 * Added pagination options
