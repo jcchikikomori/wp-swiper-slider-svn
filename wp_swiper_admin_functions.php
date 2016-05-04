@@ -46,27 +46,15 @@
 		}
 
 		function wp_swiper_config_metabox($meta_boxes){
-			if(isset($_GET['post'])){$post_id = $_GET['post'];}else{$post_id = null;}
 			$meta_boxes[] = array(
 				'title'			=> __('Configuration', 'wp_swiper'),
 				'post_types'	=> 'wp_swiper',
 				'fields'		=> array(
-					//shortcode//
-					array(
-						'type'			=> 'input',
-						'class'			=> 'always_visible',
-						'attributes' => array(
-							'value'		=> '[wp_swiper id='.$post_id.']',
-							'onclick'	=> 'this.select();',
-							'style'		=> 'width: 200px; text-align: center;'
-						),
-						'desc'			=> '<span style="margin: 8px; line-height: 22px;">Copy/paste this shortcode where you want !</span>'
-					),
-
 					//Metabox tabs buttons//
-					array('class' => 'tab_trigger always_visible general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
-					array('class' => 'tab_trigger always_visible navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
-					array('class' => 'tab_trigger always_visible advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
+					array('class' => 'tab_trigger general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
+					array('class' => 'tab_trigger navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
+					array('class' => 'tab_trigger pagination', 'name' => '', 'type' => 'button', 'std' => __('Pagination', 'wp_swiper')),
+					array('class' => 'tab_trigger advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
 
 					//General//
 					array(
@@ -169,6 +157,42 @@
 						'type'			=> 'textarea',
 						'placeholder'	=> __('Example : direction: "vertical",', 'wp_swiper'),
 						'desc'			=> __('See <a href="http://idangero.us/swiper/api/">http://idangero.us/swiper/api/</a> ', 'wp_swiper'),
+					),
+
+					//PAGINATION//
+					array(
+						'id'			=> '_wp_swiper_pagination_enable',
+						'class'			=> 'tab_pagination',
+						'name'			=> __('Enable pagination', 'wp_swiper'),
+						'type'			=> 'checkbox',
+					),
+					array(
+						'id'			=> '_wp_swiper_pagination_clickable',
+						'class'			=> 'tab_pagination',
+						'name'			=> __('clickable', 'wp_swiper'),
+						'type'			=> 'checkbox',
+					),
+					array(
+						'id'			=> '_wp_swiper_pagination_type',
+						'class'			=> 'tab_pagination',
+						'name'			=> __('Pagination type', 'wp_swiper'),
+						'type'			=> 'select',
+						'options' => array(
+							'bullets'	=> __('Bullets', 'wp_swiper'),
+							'fraction'	=> __('Fraction', 'wp_swiper'),
+							'progress'	=> __('Progress', 'wp_swiper'),
+						),
+					),
+					array(
+						'id'			=> '_wp_swiper_pagination_bullet_align',
+						'class'			=> 'tab_pagination',
+						'name'			=> __('Pagination bullets align', 'wp_swiper'),
+						'type'			=> 'select',
+						'options' => array(
+							'left'		=> __('Left', 'wp_swiper'),
+							'center'	=> __('Center', 'wp_swiper'),
+							'right'		=> __('Right', 'wp_swiper'),
+						),
 					),
 				),
 			);

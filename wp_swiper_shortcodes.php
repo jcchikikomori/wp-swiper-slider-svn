@@ -11,12 +11,15 @@
 			$slider_id = $atts['id'];
 
 			//Init variables//
-			$nav_enabled = false;
-			$nav_buttons_height = 30;
-			$nav_buttons_pos_css = 'position: absolute; z-index: 99;';
-			$nav_prev_css = ''; //additionnal prev nav btn css
-			$nav_next_css = ''; //additionnal next nav btn css
-			$wrapper_additionnal_css = '';
+			$nav_enabled 				= false;
+			$nav_buttons_height 		= 30;
+			$nav_buttons_pos_css 		= 'position: absolute; z-index: 99;';
+			$nav_prev_css 				= ''; //additionnal prev nav btn css
+			$nav_next_css 				= ''; //additionnal next nav btn css
+			$wrapper_additionnal_css 	= '';
+			$pagination_enabled 		= false;
+			$pagination_clickable 		= false;
+			$pagination_style 			= '';
 
 			//Params//
 			//General
@@ -71,12 +74,51 @@
 				$nav_next_css = get_post_meta($slider_id, '_wp_swiper_nav_next_css', true);
 			}
 
+			//Pagination//
+			if(get_post_meta($slider_id, '_wp_swiper_pagination_enable', true) !== ''){
+				if(get_post_meta($slider_id, '_wp_swiper_pagination_enable', true) == 1){
+					$pagination_enabled = true;
+					$params .= 'pagination: $(\'.wp_swiper_pagination\'),';
+				}
+			}
+			if(get_post_meta($slider_id, '_wp_swiper_pagination_clickable', true) !== ''){
+				if(get_post_meta($slider_id, '_wp_swiper_pagination_clickable', true) == 1){
+					$pagination_clickable = true;
+					$params .= 'paginationClickable: true,';
+				}
+			}
+			if(get_post_meta($slider_id, '_wp_swiper_pagination_type', true) !== ''){
+				switch(get_post_meta($slider_id, '_wp_swiper_pagination_type', true)){
+					case 'bullets':
+						$params .= 'paginationType: "bullets",';
+						break;
+					case 'fraction':
+						$params .= 'paginationType: "fraction",';
+						break;
+					case 'progress':
+						$params .= 'paginationType: "progress",';
+						break;
+				}
+			}
+			if(get_post_meta($slider_id, '_wp_swiper_pagination_bullet_align', true) !== ''){
+				switch(get_post_meta($slider_id, '_wp_swiper_pagination_bullet_align', true)){
+					case 'left':
+						$pagination_style .= 'text-align: left;';
+						break;
+					case 'center':
+						$pagination_style .= 'text-align: center;';
+						break;
+					case 'right':
+						$pagination_style .= 'text-align: right;';
+						break;
+				}
+			}
+
+
 			//Advanced params//
 			if(get_post_meta($slider_id, '_wp_swiper_wrapper_css', true) !== ''){
 				$wrapper_additionnal_css = get_post_meta($slider_id, '_wp_swiper_wrapper_css', true);
 			}
-
-			// /Params//
 
 
 			//HTML
@@ -94,6 +136,7 @@
 
 			$html .= '</div>';
 			if($nav_enabled == true){$html .= '<div class="wp_swiper_nav_next" style="right: 0; '.$nav_css.' '.$nav_next_css.'"></div>';}
+			if($pagination_enabled == true){$html .= '<div class="wp_swiper_pagination" style="z-index: 1; '.$pagination_style.'"></div>';}
 			$html .= '</div>';
 
 

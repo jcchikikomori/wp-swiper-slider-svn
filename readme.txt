@@ -45,10 +45,17 @@ I speak English and French ;)
 
 == Screenshots ==
 
-1.
-2.
+1. /assets/screenshot-1.png
+2. /assets/screenshot-2.png
 
 == Changelog ==
+
+= 0.1.5 =
+* 0.1.4 errors fix
+* Added pagination options
+  1. Enable/disable.
+  2. Clickable/not clickable.
+  3. Pagination type (bullets, fraction, progress).
 
 = 0.1.4 =
 * improved shortcode area
