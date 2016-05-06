@@ -46,32 +46,15 @@
 		}
 
 		function wp_swiper_config_metabox($meta_boxes){
-			if(isset($_GET['post'])){
-				$post_id = $_GET['post'];
-			}else{
-				$post_id = 0;
-			}
 			$meta_boxes[] = array(
 				'title'			=> __('Configuration', 'wp_swiper'),
 				'post_types'	=> 'wp_swiper',
 				'fields'		=> array(
-					array(
-						'id'			=> '',
-						'class'			=> 'always_show',
-						'name'			=> __('Enable autoplay', 'wp_swiper'),
-						'type'			=> 'input',
-						'desc'			=> __('Use this shortcode anywhere !', 'wp_swiper'),
-						'attributes' => array(
-							'onclick'	=> 'this.select();',
-							'value'	=> '[wp_swiper id='.$post_id.']',
-						),
-					),
-
 					//Metabox tabs buttons//
-					array('class' => 'tab_trigger always_show general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
-					array('class' => 'tab_trigger always_show navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
-					array('class' => 'tab_trigger always_show pagination', 'name' => '', 'type' => 'button', 'std' => __('Pagination', 'wp_swiper')),
-					array('class' => 'tab_trigger always_show advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
+					array('class' => 'tab_trigger general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
+					array('class' => 'tab_trigger navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
+					array('class' => 'tab_trigger pagination', 'name' => '', 'type' => 'button', 'std' => __('Pagination', 'wp_swiper')),
+					array('class' => 'tab_trigger advanced', 'name' => '', 'type' => 'button', 'std' => __('Advanced', 'wp_swiper')),
 
 					//General//
 					array(

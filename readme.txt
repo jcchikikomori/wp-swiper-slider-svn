@@ -1,14 +1,14 @@
-=== WP Swiper slider ===
+=== Plugin Name ===
 Contributors: webevasion
-Donate link: http://www.webevasion.net/
-Tags: slider, responsive, mobile, touch, swiper
-Requires at least: 4.0
-Tested up to: 4.5.1
-Stable tag: 0.1.5.1
+* Donate link: http://example.com/
+Tags: comments, spam
+Requires at least: 4.3
+Tested up to: 4.3
+Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Swiper slider - The Most Modern Mobile Touch Slider - Now on your WordPress !
+Swiper slider - The Most Modern Mobile Touch Slider - for Wordpress | working with shortcode
 
 == Description ==
 
@@ -17,11 +17,11 @@ Swiper slider now for Wordpress !
 Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
 
 Current features :
-*- Create, edit, delete a slider (custom post type).
-*- Add, sort (drag and drop), replace, and remove images from media library.
-*- Configure the slider (metabox), enter Swiper configuration variables into a textarea.
-*- Enable/disable nav buttons.
-*- Two CSS area for nav button design.
+- Create, edit, delete a slider (custom post type).
+- Add, sort (drag and drop), replace, and remove images from media library.
+- Configure the slider (metabox), enter Swiper configuration variables into a textarea.
+- Enable/disable nav buttons.
+- Two CSS area for nav button design.
 
 == Installation ==
 
@@ -50,19 +50,6 @@ I speak English and French ;)
 
 == Changelog ==
 
-= 0.1.5.1 =
-* Media upload error fix.
-
-= 0.1.5 =
-* 0.1.4 errors fix
-* Added pagination options
-  1. Enable/disable.
-  2. Clickable/not clickable.
-  3. Pagination type (bullets, fraction, progress).
-
-= 0.1.4 =
-* improved shortcode area
-
 = 0.1.3 =
 * Added tab system for configuration area.
 * Added Nav buttons options (width, height, position and custom CSS).
@@ -88,6 +75,7 @@ I speak English and French ;)
 What's coming (soon) ?
 
 * Better design for configuration area.
+* Tab system sorting configuration types (general, advanced, etc...).
 * 1. A free version with most used options.
   2. A "donate" version, from $10, with all features.
 * First stable version will include ALL swiper options !

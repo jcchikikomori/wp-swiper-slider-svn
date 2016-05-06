@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	var duration = 400;
 
 	/*===== Tabs system =====*/
-	$('.rwmb-meta-box > .rwmb-field:not(.always_show)').hide();
+	$('.rwmb-meta-box > .rwmb-field:not(.tab_trigger)').hide();
 	$('.rwmb-meta-box > .tab_general').fadeIn(duration);
 	$('.rwmb-meta-box > .tab_trigger.general a').css({'background': '#ddd'});
 
@@ -11,7 +11,7 @@ jQuery(document).ready(function($){
 		$('.rwmb-meta-box > .tab_trigger a').css({'background': '#f7f7f7'});
 		$(this).find('a').css({'background': '#ddd'});
 
-		$('.rwmb-meta-box > .rwmb-field:not(.always_show)').slideUp(duration);
+		$('.rwmb-meta-box > .rwmb-field:not(.tab_trigger)').slideUp(duration);
 		if($(this).hasClass('general')){
 			if($('.rwmb-meta-box > .tab_general').css('display') != 'block'){
 				$('.rwmb-meta-box > .tab_general').slideDown(duration);

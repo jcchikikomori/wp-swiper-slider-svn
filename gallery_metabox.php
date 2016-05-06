@@ -59,7 +59,7 @@
 		if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) return;
 
 		if(isset($_POST['vdw_gallery_id'])) {
-			update_post_meta($post_id, 'vdw_gallery_id', sanitize_text_field($_POST['vdw_gallery_id']));
+			update_post_meta($post_id, 'vdw_gallery_id', $_POST['vdw_gallery_id']);
 		} else {
 			delete_post_meta($post_id, 'vdw_gallery_id');
 		}
