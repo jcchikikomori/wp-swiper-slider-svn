@@ -17,25 +17,25 @@ Swiper slider now for Wordpress !
 Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
 
 Current features :
-- Create, edit, delete a slider (custom post type).
-- Add, sort (drag and drop), replace, and remove images from media library.
-- Configure the slider (metabox), enter Swiper configuration variables into a textarea.
-- Enable/disable nav buttons.
-- Two CSS area for nav button design.
+* Create, edit, delete a slider (custom post type).
+* Add, sort (drag and drop), replace, and remove images from media library.
+* Configure the slider (metabox), enter Swiper configuration variables into a textarea.
+* Enable/disable nav buttons.
+* Two CSS area for nav button design.
 
 == Installation ==
 
 1. Install the plugin through the WordPress plugins screen directly, or upload plugin files into /wp-content/plugins/ directory.
 2. Activate the plugin through the 'Plugins' screen in WordPress.
 3. Use the "Swiper" menu item for manage the differents sliders.
-4. Copy the shortcode in the configuration section of the slider and paste it in your post.
+4. Copy the shortcode from the configuration section of the slider and paste it in your post.
 
 
 == Frequently Asked Questions ==
 
 = When full plugin will be released ? =
 
-This project is developed in my free time, so there is not deadline for me.
+This project is developed in my free time, so there is no deadline for me.
 I do my best for improving the module as soon as possible !
 
 = Can I contribute to the developpement ? =
@@ -45,13 +45,12 @@ I speak English and French ;)
 
 == Screenshots ==
 
-1. /assets/screenshot-1.png
-2. /assets/screenshot-2.png
+1. /assets/screenshot-2.png
 
 == Changelog ==
 
 = 0.1.5.2 =
-Admin pages fixes
+Admin pages improvements
 
 = 0.1.3 =
 * Added tab system for configuration area.
@@ -73,13 +72,10 @@ Admin pages fixes
 = 0.1.0 =
 * First working version
 
-
 == Next version ==
 What's coming (soon) ?
 
-* Better design for configuration area.
-* Tab system sorting configuration types (general, advanced, etc...).
-* 1. A free version with most used options.
-  2. A "donate" version, from $10, with all features.
 * First stable version will include ALL swiper options !
 * More options will be added (like a 3D coveflow mod, for example).
+* A free version with most used options.
+* A "donate" version, from $10, with all features.
