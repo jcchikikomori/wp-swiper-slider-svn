@@ -46,10 +46,26 @@
 		}
 
 		function wp_swiper_config_metabox($meta_boxes){
+			if(isset($_GET['post'])){$post_id = $_GET['post'];}else{$post_id = '';}
 			$meta_boxes[] = array(
 				'title'			=> __('Configuration', 'wp_swiper'),
 				'post_types'	=> 'wp_swiper',
 				'fields'		=> array(
+					array(
+						'id'			=> '_wp_swiper_shortcode',
+						'class'			=> 'tab_trigger',
+						'name'			=> __('Shortcode', 'wp_swiper'),
+						'type'			=> 'text',
+						'desc'			=> __('Copy/paste this shortcode where you want', 'wp_swiper'),
+						'attributes' => array(
+							'value'		=> '[wp_swiper id='.$post_id.']',
+						),
+					),
+					array(
+						'type'			=> 'custom_html',
+						'class'			=> 'tab_trigger',
+						'std'			=> '<div class="clearfix" style="width: 100vw;"></div>',
+					),
 					//Metabox tabs buttons//
 					array('class' => 'tab_trigger general', 'name' => '', 'type' => 'button', 'std' => __('General', 'wp_swiper')),
 					array('class' => 'tab_trigger navigation', 'name' => '', 'type' => 'button', 'std' => __('Navigation', 'wp_swiper')),
