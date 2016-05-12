@@ -23,6 +23,10 @@ Current features :
 - Enable/disable nav buttons.
 - Two CSS area for nav button design.
 
+Note: Shortcodes are used like this (in case you don't see the shortcode field) :
+[wp_swiper id=145]
+145 is the ID of the slider (visible in the url of the 'Edit slider' page).
+
 == Installation ==
 
 1. Install the plugin through the WordPress plugins screen directly, or upload plugin files into /wp-content/plugins/ directory.
