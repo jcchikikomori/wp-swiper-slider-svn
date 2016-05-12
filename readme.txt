@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: webevasion
 * Donate link: http://example.com/
-Tags: comments, spam
+Tags: slider, touch, responsive, mobile, swiper, 3d
 Requires at least: 4.3
-Tested up to: 4.3
-Stable tag: 4.3
+Tested up to: 4.5.2
+Stable tag: 0.1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,10 +22,6 @@ Current features :
 - Configure the slider (metabox), enter Swiper configuration variables into a textarea.
 - Enable/disable nav buttons.
 - Two CSS area for nav button design.
-
-Note: Shortcodes are used like this (in case you don't see the shortcode field) :
-[wp_swiper id=145]
-145 is the ID of the slider (visible in the url of the 'Edit slider' page).
 
 == Installation ==
 
@@ -53,6 +49,9 @@ I speak English and French ;)
 2. /assets/screenshot-2.png
 
 == Changelog ==
+
+= 0.1.5.2 =
+Admin pages fixes
 
 = 0.1.3 =
 * Added tab system for configuration area.
