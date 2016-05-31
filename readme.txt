@@ -46,6 +46,11 @@ Features :
 3. Use the "Swiper" menu item for manage the differents sliders.
 4. Copy the shortcode in the configuration section of the slider and paste it in your post.
 
+== Upgrade Notice ==
+Just upgrade with the plugin page of your website !
+
+== Screenshots ==
+.
 
 == Frequently Asked Questions ==
 
