@@ -17,24 +17,24 @@ Swiper slider now for Wordpress !
 Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
 
 Features :
-= General =
+=> General
 * Autoplay on/off.
 * Autoplay speed.
 * Speed.
 
-= Navigation =
+=> Navigation
 * Nav buttons enable/disable.
 * Position (top, mid, bot).
 * Width/height.
 * Custom CSS for left and for right button.
 
-= Pagination =
+=> Pagination
 * Pagination enable/disable.
 * Pagination clickable on/off.
 * 3 Types : Bullets, fraction, progress bar.
 * For bullets : align left/center or right.
 
-= Advanced =
+=> Advanced
 * Custom CSS for wrapper.
 * Custom Swiper configuration (only for versions 0.x.x.x).
 * NEW : Randomize slides.
