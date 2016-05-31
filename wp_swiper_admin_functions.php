@@ -38,8 +38,11 @@
 						'thumbnail',
 						'page-attributes'
 					),
-					'has_archive' => true,
-					'hierarchical' => true
+					'has_archive' => false,
+					'hierarchical' => false,
+					'exclude_from_search' => true,
+					'rewrite' => false,
+					'show_in_nav_menus' => false,
 				)
 			);
 			flush_rewrite_rules();
@@ -56,7 +59,7 @@
 						'class'			=> 'tab_trigger',
 						'name'			=> __('Shortcode', 'wp_swiper'),
 						'type'			=> 'text',
-						'desc'			=> __('Copy/paste this shortcode where you want', 'wp_swiper'),
+						'after'			=> __('<div style="display: inline; margin-left: 15px; vertical-align: top;">Copy/paste this shortcode where you want</div>', 'wp_swiper'),
 						'attributes' => array(
 							'value'		=> '[wp_swiper id='.$post_id.']',
 						),
@@ -160,6 +163,12 @@
 						'class'			=> 'tab_advanced',
 						'name'			=> __('Additionnal wrapper CSS', 'wp_swiper'),
 						'type'			=> 'textarea',
+					),
+					array(
+						'id'			=> '_wp_swiper_randomize_slides',
+						'class'			=> 'tab_advanced',
+						'name'			=> __('Randomize slides', 'wp_swiper'),
+						'type'			=> 'checkbox',
 					),
 					array(
 						'type'			=> 'custom_html',

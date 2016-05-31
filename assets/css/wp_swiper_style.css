@@ -34,6 +34,9 @@
 	border-radius: 100%;
 }
 
+body.post-type-wp_swiper #edit-slug-box{display: none;}
+body.post-type-wp_swiper #configuration{overflow-x: hidden;}
+
 /*==================*/
 
 .tab_trigger{

@@ -119,6 +119,11 @@
 			if(get_post_meta($slider_id, '_wp_swiper_wrapper_css', true) !== ''){
 				$wrapper_additionnal_css = get_post_meta($slider_id, '_wp_swiper_wrapper_css', true);
 			}
+			if(get_post_meta($slider_id, '_wp_swiper_randomize_slides', true) !== ''){
+				if(get_post_meta($slider_id, '_wp_swiper_randomize_slides', true) == 1){
+					$randomize_slides = true;
+				}else{$randomize_slides = false;}
+			}else{$randomize_slides = false;}
 
 
 			//HTML
@@ -128,6 +133,7 @@
 
 			$images = get_post_meta($slider_id, 'vdw_gallery_id', true);
 			if(isset($images)){
+				if($randomize_slides == true){shuffle($images);}
 				foreach($images as $image){
 					$html .= "
 					<img class='swiper-slide' src='".wp_get_attachment_url($image, 'large')."' />";
