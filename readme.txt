@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: webevasion
 * Donate link: http://example.com/
-Tags: comments, spam
-Requires at least: 4.3
-Tested up to: 4.3
-Stable tag: 4.3
+Tags: slider, mobile, responsive, swiper, touch, 3d
+Requires at least: 4.0
+Tested up to: 4.5.2
+Stable tag: 0.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,12 +16,28 @@ Swiper slider now for Wordpress !
 
 Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
 
-Current features :
-- Create, edit, delete a slider (custom post type).
-- Add, sort (drag and drop), replace, and remove images from media library.
-- Configure the slider (metabox), enter Swiper configuration variables into a textarea.
-- Enable/disable nav buttons.
-- Two CSS area for nav button design.
+Features :
+= General =
+* Autoplay on/off.
+* Autoplay speed.
+* Speed.
+
+= Navigation =
+* Nav buttons enable/disable.
+* Position (top, mid, bot).
+* Width/height.
+* Custom CSS for left and for right button.
+
+= Pagination =
+* Pagination enable/disable.
+* Pagination clickable on/off.
+* 3 Types : Bullets, fraction, progress bar.
+* For bullets : align left/center or right.
+
+= Advanced =
+* Custom CSS for wrapper.
+* Custom Swiper configuration (only for versions 0.x.x.x).
+* NEW : Randomize slides.
 
 == Installation ==
 
@@ -43,12 +59,12 @@ I do my best for improving the module as soon as possible !
 Yes, you can make a donation or suggest me code correction, see you in private message or via email : contact(at)webevasion.net
 I speak English and French ;)
 
-== Screenshots ==
-
-1. /assets/screenshot-1.png
-2. /assets/screenshot-2.png
-
 == Changelog ==
+
+= 0.1.6 =
+* New feature : show slides in random order (randomize slides in advanced tab).
+* Some config area css improvements.
+* Removed permalink & slider can't be used in menus.
 
 = 0.1.3 =
 * Added tab system for configuration area.
@@ -75,8 +91,6 @@ I speak English and French ;)
 What's coming (soon) ?
 
 * Better design for configuration area.
-* Tab system sorting configuration types (general, advanced, etc...).
 * 1. A free version with most used options.
   2. A "donate" version, from $10, with all features.
-* First stable version will include ALL swiper options !
 * More options will be added (like a 3D coveflow mod, for example).
