@@ -24,7 +24,14 @@ jQuery(function($) {
         attachment = attachment.toJSON(),
         index      = listIndex + (i + 1);
 
-        $('#gallery-metabox-list').append('<li><input type="hidden" name="vdw_gallery_id[' + index + ']" value="' + attachment.id + '"><img class="image-preview" src="' + attachment.sizes.thumbnail.url + '"><a class="change-image button button-small" href="#" data-uploader-title="Change image" data-uploader-button-text="Change image">Change image</a><br><small><a class="remove-image" href="#">Remove image</a></small></li>');
+        if(typeof attachment.sizes.thumbnail !== 'undefined')
+          imgurl = attachment.sizes.thumbnail.url;
+        else if(typeof attachment.sizes.full !== 'undefined')
+          imgurl = attachment.sizes.full.url;
+        else
+          imgurl = attachment.url;
+        
+        $('#gallery-metabox-list').append('<li><input type="hidden" name="vdw_gallery_id[' + index + ']" value="' + attachment.id + '"><img class="image-preview" src="' + imgurl + '"><a class="change-image button button-small" href="#" data-uploader-title="Change image" data-uploader-button-text="Change image">Change image</a><br><small><a class="remove-image" href="#">Remove image</a></small></li>');
       });
     });
 

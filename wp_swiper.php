@@ -5,7 +5,7 @@
 		Description: Swiper Most Modern Mobile Touch Slider for WordPress
 		Author: Webévasion
 		Author URI: http://www.webevasion.net/
-		Version: 0.1.6
+		Version: 0.1.6.1
 		License: GPLv2 or later
 	*/
 
