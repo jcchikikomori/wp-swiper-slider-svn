@@ -35,6 +35,8 @@
 			//Module style
 			wp_register_style('wp_swiper_style', plugin_dir_url(__FILE__).'assets/css/wp_swiper_style.css');
 			wp_enqueue_style('wp_swiper_style');
+
+			wp_swiper_init_assets();
 		}
 
 		public function wp_swiper_init_assets(){
