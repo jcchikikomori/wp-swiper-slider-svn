@@ -12,9 +12,12 @@ Swiper slider - The Most Modern Mobile Touch Slider - for Wordpress | working wi
 
 == Description ==
 
-Swiper slider now for Wordpress !
+Swiper slider for Wordpress !
 
-Note : This project is currently in BETA version ! it can contain bugs or missing configuration options.
+===================================================================
+✔️ Support with 5-star rating if you want new updates ! ⭐⭐⭐⭐⭐
+===================================================================
+
 
 Features :
 => General
@@ -67,6 +70,7 @@ I speak English and French ;)
 == Changelog ==
 = 0.1.6.1 =
 - Working on WordPress 5.0.2
+Support with 5-star rating if you want new updates !
 
 = 0.1.6.1 =
 - Image import error fix.
