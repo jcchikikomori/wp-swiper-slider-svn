@@ -3,8 +3,8 @@ Contributors: webevasion
 * Donate link: http://example.com/
 Tags: slider, mobile, responsive, swiper, touch, 3d
 Requires at least: 4.0
-Tested up to: 4.5.3
-Stable tag: 0.1.6.2
+Tested up to: 5.0.2
+Stable tag: 0.1.6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,9 @@ Yes, you can make a donation or suggest me code correction, see you in private m
 I speak English and French ;)
 
 == Changelog ==
+= 0.1.6.1 =
+- Working on WordPress 5.0.2
+
 = 0.1.6.1 =
 - Image import error fix.
 
