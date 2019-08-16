@@ -127,7 +127,7 @@
 
 
 			//HTML
-			$html .= '<div class="wp_swiper_slider_wrapper" style="position: relative; overflow: hidden; '.$wrapper_additionnal_css.'">';
+			$html .= '<div id="slider-'.$slider_id.'" class="wp_swiper_slider_wrapper" style="position: relative; overflow: hidden; '.$wrapper_additionnal_css.'">';
 			if($nav_enabled == true){$html .= '<div class="wp_swiper_nav_prev" style="left: 0; '.$nav_css.' '.$nav_prev_css.'"></div>';}
 			$html .= '<div class="swiper-wrapper">';
 
@@ -159,7 +159,7 @@
 
 			$script = '<script>
 				jQuery(document).ready(function($){
-					var wp_swiper = new Swiper(".wp_swiper_slider_wrapper", {
+					var wp_swiper = new Swiper("#slider-' . $slider_id . '", {
 						'.$params.'
 					});
 				});
@@ -172,6 +172,3 @@
 	}
 
 	$WPSwiper_shortcodes = new WPSwiper_shortcodes();
-
-
-?>
