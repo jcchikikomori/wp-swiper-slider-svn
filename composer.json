@@ -1,0 +1,19 @@
+{
+  "name": "gorated/wp-swiper-slider",
+  "description": "WP Swiper with patches needed (imported from SVN trunk)",
+  "keywords": [
+    "wordpress",
+    "plugin"
+  ],
+  "homepage": "https://wordpress.org/plugins/wp-swiper-slider/",
+  "authors": [
+    {
+      "name": "Webévasion",
+      "homepage": "http://www.webevasion.net/"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.6"
+  }
+}
