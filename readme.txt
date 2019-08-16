@@ -4,7 +4,7 @@ Contributors: webevasion
 Tags: slider, mobile, responsive, swiper, touch, 3d
 Requires at least: 4.0
 Tested up to: 5.0.2
-Stable tag: 0.1.6.3
+Stable tag: 0.1.6.3+MOD
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
