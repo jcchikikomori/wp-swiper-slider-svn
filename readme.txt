@@ -4,7 +4,7 @@ Contributors: webevasion
 Tags: slider, mobile, responsive, swiper, touch, 3d
 Requires at least: 4.0
 Tested up to: 5.0.2
-Stable tag: 0.1.6.3+MOD
+Stable tag: 0.1.6.4+MOD
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,12 @@ Yes, you can make a donation or suggest me code correction, see you in private m
 I speak English and French ;)
 
 == Changelog ==
+= 0.1.6.4+MOD =
+- Replaced new Swiper() selector with IDs to achieve multiple sliders
+
+= 0.1.6.3+MOD =
+- Composer Support
+
 = 0.1.6.1 =
 - Working on WordPress 5.0.2
 Support with 5-star rating if you want new updates !
